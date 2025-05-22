@@ -10,7 +10,7 @@ export const cartStore = defineStore("cart", () => {
 
   const getSumCart = computed(() => {
     return _cart.value
-      .reduce((sum, item) => sum + item.count * item.price, 0)
+      .reduce((sum, item) => sum + item.count * item.price, 0.00)
       .toFixed(2);
   });
 
