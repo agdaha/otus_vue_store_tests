@@ -1,0 +1,48 @@
+@use '../abstract/constants';
+
+body {
+    background-color: constants.$bg-color;
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 1.0;
+    
+}
+
+h1, h2 {
+        color: #1b75bc;
+}
+
+#app {
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+a {
+    text-decoration: inherit;
+}
+
+a:link {
+    color: #1b75bc;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #1b75bc;
+    text-decoration: none;
+}
+
+input {
+    border-radius: 4px;
+    padding: 2px;
+    margin: 4px;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #aaaaaa;
+  background-color: #cccccc;
+  color: #777777;
+}
